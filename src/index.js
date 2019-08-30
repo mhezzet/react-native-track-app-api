@@ -21,10 +21,6 @@ mongoose
   .then(() => console.log('connected to mongodb server'))
   .catch(err => console.error('error connecting to mongodb', err))
 
-app.get('/', (req, res) => {
-  res.send('old is gold')
-})
-
 app.listen(port, () => {
   console.log('listening on port' + port)
 })
