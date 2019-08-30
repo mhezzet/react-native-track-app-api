@@ -4,7 +4,7 @@ const authRoutes = require('./routes/authRoutes')
 const trackRoutes = require('./routes/trackRoutes')
 
 const app = express()
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 4001
 
 app.use(express.json())
 app.use(authRoutes)
