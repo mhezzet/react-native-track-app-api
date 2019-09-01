@@ -1,11 +1,13 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const cors = require('cors')
 const authRoutes = require('./routes/authRoutes')
 const trackRoutes = require('./routes/trackRoutes')
 
 const app = express()
 const port = process.env.PORT || 4001
 
+app.use(cors())
 app.use(express.json())
 app.use(authRoutes)
 app.use(trackRoutes)
